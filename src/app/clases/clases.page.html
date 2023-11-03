@@ -1,0 +1,29 @@
+<ion-app>
+  <ion-menu contentId="main-content">
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <form formGroup ="clases">
+        <ion-item>
+          <ion-label><ion-button expand="full" size="large" fill="outline" [routerLink]="['/claseprog']" class="ion-text-wrap"  >{{clase1}}</ion-button></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-button expand="full" size="large" fill="outline" [routerLink]="['/clasebd']" class="ion-text-wrap" >{{clase2}}</ion-button></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-button expand="full" size="large" fill="outline" [routerLink]="['/clasearq']" class="ion-text-wrap" >{{clase3}}</ion-button></ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label><ion-button expand="full" size="large" fill="outline" [routerLink]="['/claseingl']" class="ion-text-wrap" >{{clase4}}</ion-button></ion-label>
+        </ion-item>
+      </form>
+    </ion-content>
+  </div>
+</ion-app>

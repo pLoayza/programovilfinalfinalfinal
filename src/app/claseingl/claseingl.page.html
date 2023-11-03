@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="">
+    <ion-card>
+      <br> <br>
+      <ion-button [routerLink]="['/scanner-qr']" fill="solid" color="warning" expand="block">Escanear Codigo QR</ion-button>
+      <ion-item *ngIf="teachers.length > 0">
+        <ion-label>
+          <h2>Nombre: {{ teachers[1].nombre }}</h2>
+          <ion-item *ngIf="cursos.length > 0">
+            <ion-label>
+            <h2>Seccion: {{ cursos[1].seccion }}</h2>
+              
+            </ion-label>
+          </ion-item>
+        </ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
